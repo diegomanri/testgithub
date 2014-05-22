@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        String firstName;  //to hold first name
+        String lastName;   //to hold last name
+        String fullName;   //to hold full name
+        
+        System.out.println("Hello User!\n" + "Follow the text's instructions.");
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.println("What is your first name?");
+        firstName = keyboard.nextLine();
+        
+        System.out.println("What is your last name?");
+        lastName = keyboard.nextLine();
+        
+        fullName = firstName+ "" + lastName;
+        
+        System.out.println("Welcome " + fullname + " !\n"+"I've been expecting you >:)");
+        
+        System.exit(0);
+    }
+}
